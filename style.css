@@ -24,6 +24,34 @@ because-----(localmotive use karna hai)--------------  */
 
 
 /* nav bar */
-#nav_bar{
+nav{
+    height : 6.25rem; 
+    width : 100%;
+    display : flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2vw 2vw;
+    /* 1vw = 1% of the browser window’s width
+        So if your screen is 1000px wide:
+        1vw = 10px, 2vw = 20px, and so on
 
+        padding: top-bottom  left-right;
+        padding: 2vw 2vw;
+            =>top = 2vw
+             bottom = 2vw
+            left = 2vw
+            right = 2vw */
+}
+
+#nav_right{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+#nav_right h4{
+    padding: 5px 5px;
+    border: solid 1px black;
+    border-radius: 20px;
+    font-size: 20px;
 }
