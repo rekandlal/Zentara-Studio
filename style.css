@@ -10,8 +10,20 @@ html , body {
     width: 100%;
 }
 
+/* hum parent(main_container) ko height nhi de raha hi ku ki
+because-----(localmotive use karna hai)--------------  */
 #page1{
-    height: 100vh ;
+    height: 100vh ; /* idhar 100% lete to parent ka 100% leta , agar me main_container jo parent hai page1 div usko kuch height nhi deta to (zero) to child ka height bhi zero hota */
     width: 100%;
     background-color: #EFEAE3;
+    position: relative; /* developer approach hai ki parent div ko humesa position relative denge ku ki chid div pe hum top , right , left , bottom , z-index de skate hai  or children control rahte hai*/
+
+}
+
+/* if you want color from any website use extensions---(colorzilla) */
+
+
+/* nav bar */
+#nav_bar{
+
 }
