@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Gilroy';
+    font-family: 'Gilroy', sans-serif; /*Agar browser ko Gilroy nahi milta, to koi generic sans-serif font use kar lena  */
 }
 
 html , body {
@@ -51,9 +51,10 @@ nav{
 
 #nav_right h4{
     padding: 10px 20px;
-    border: solid 1px #8a8a8a89;
+    border: solid 1.2px rgba(0, 0, 0, 0.577);
     border-radius: 50px;
     font-weight: 400; /*Text kitna patla (thin) ya mota (bold) dikhega.*/
+    font-family: 'Gilroy';
     color: #000000bb;
     font-size: 18px;
     transition: all ease 0.4s;
@@ -94,3 +95,19 @@ nav{
     color: white;
 }
 
+
+/* home page center content */
+#center_container{
+    height: 66vh;
+    width: 100%;
+    background-color: blue;
+    display: flex;
+    align-items: flex-end;
+
+    justify-content: space-between;
+}
+
+#left h3{
+    width: 30vw;
+    font-size: 2vw;
+}
