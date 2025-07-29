@@ -1,8 +1,13 @@
+@font-face{
+    font-family: neu ;
+    src: url(font/NeueHaasDisplayMediu.ttf);
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Gilroy', sans-serif; /*Agar browser ko Gilroy nahi milta, to koi generic sans-serif font use kar lena  */
+    font-family: neu; /*Agar browser ko Gilroy nahi milta, to koi generic sans-serif font use kar lena  */
 }
 
 html , body {
@@ -92,7 +97,7 @@ nav{
 }
 
 #nav_right h4:hover a{
-    color: white;
+    color: #fff;
 }
 
 
@@ -108,6 +113,6 @@ nav{
 }
 
 #left h3{
-    width: 30vw;
-    font-size: 2vw;
+    width: 25vw;
+    font-size: 1.8vw;
 }
