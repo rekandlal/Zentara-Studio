@@ -132,7 +132,7 @@ nav{
 
 /*----video styles----*/
 
-video{
+#page1 video{
     border-radius: 27px;
     margin-top: 8vh;
     width: 100%;
