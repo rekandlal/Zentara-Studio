@@ -1,13 +1,13 @@
 @font-face{
     font-family: neu ;
-    src: url(font/NeueHaasDisplayMediu.ttf);
+    src: url(./NeueHaasDisplayMediu.ttf);
 }
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: neu; /*Agar browser ko Gilroy nahi milta, to koi generic sans-serif font use kar lena  */
+    font-family: 'Gilory',sans-serif; /*Agar browser ko Gilroy nahi milta, to koi generic sans-serif font use kar lena  */
 }
 
 html , body {
@@ -22,7 +22,7 @@ because-----(localmotive use karna hai)--------------  */
     width: 100%;
     background-color: #EFEAE3;
     position: relative; /* developer approach hai ki parent div ko humesa position relative denge ku ki chid div pe hum top , right , left , bottom , z-index de skate hai  or children control rahte hai*/
-
+    padding: 0 2vw;
 }
 
 /* if you want color from any website use extensions---(colorzilla) */
@@ -30,12 +30,12 @@ because-----(localmotive use karna hai)--------------  */
 
 /* nav bar */
 nav{
-    height : 6.25rem; 
+    height : 7.25rem; 
     width : 100%;
     display : flex;
     align-items: center;
     justify-content: space-between;
-    padding: 2vw 2vw;
+    padding: 4.8vw 0vw;
     /* 1vw = 1% of the browser window’s width
         So if your screen is 1000px wide:
         1vw = 10px, 2vw = 20px, and so on
@@ -58,9 +58,9 @@ nav{
     padding: 10px 20px;
     border: solid 1.2px rgba(0, 0, 0, 0.577);
     border-radius: 50px;
-    font-weight: 400; /*Text kitna patla (thin) ya mota (bold) dikhega.*/
+    font-weight: 550; /*Text kitna patla (thin) ya mota (bold) dikhega.*/
     font-family: 'Gilroy';
-    color: #000000bb;
+    color: black;
     font-size: 18px;
     transition: all ease 0.4s;
 
@@ -103,16 +103,29 @@ nav{
 
 /* home page center content */
 #center_container{
-    height: 66vh;
-    width: 100%;
-    background-color: blue;
+    /* background-color: orange;  for check*/  
     display: flex;
+    height: 76vh;
+    width: 100%;
     align-items: flex-end;
-
     justify-content: space-between;
+
+    border-bottom: 1px solid #BFBBB6;
+    padding-bottom: 9vh;
 }
 
 #left h3{
-    width: 25vw;
-    font-size: 1.8vw;
+    font-family:neu;
+    width: 29vw;
+    font-size: 2vw;
+    padding-left : 1vw;
+}
+
+#center_container h1{
+    font-family: neu;
+    font-size: 10vw;
+    text-align: end;
+    line-height: 83%;
+    padding-right: 1vw;
+
 }
