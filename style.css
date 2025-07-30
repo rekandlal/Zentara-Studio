@@ -133,9 +133,11 @@ nav{
 /*----video styles----*/
 
 #page1 video{
+    position: relative;
     border-radius: 27px;
     margin-top: 8vh;
     width: 100%;
+    z-index: 999; /* layout priority */
 }
 
 /*----animation part-------*/
@@ -150,8 +152,8 @@ nav{
     filter: blur(25px);
     border-top-left-radius: 50%;
     border-bottom-left-radius: 50%;
-
 }
+
 
 #hero-1{
     position: absolute;
@@ -159,12 +161,13 @@ nav{
     width: 35vw;
     border-radius: 50%;
     filter: blur(15px);
-    background : linear-gradient(#FE330A,#fe4416);
+    background : linear-gradient(#FE330A,#FE330A);
     animation-name: anime1;
     animation-duration: 6s;
     animation-direction: alternate;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
+
 }
 
 #hero-2{
@@ -174,12 +177,13 @@ nav{
     border-radius: 50%;
     filter: blur(20px);
     right: 20%;
-    background : linear-gradient(#FE330A,#fe4416);
+    background : linear-gradient(#FE330A,#FE330A);
     animation-name: anime2;
     animation-duration: 6s;
     animation-direction: alternate;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
+
 }
 
 #hero-3{
@@ -189,12 +193,13 @@ nav{
     border-radius: 50%;
     filter: blur(20px);
     right: 0%;
-    background : linear-gradient(#FE330A,#fe4416);
+    background : linear-gradient(#FE330A,#FE330A);
     animation-name: anime3;
     animation-duration: 4s;
     animation-direction: alternate;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
+
 }
 
 @keyframes anime1  {
@@ -215,7 +220,7 @@ nav{
     transform: translate(0%, -10%);
   }
   50%{
-    transform: translate(20% ,-1%);
+    transform: translate(25% ,-1%);
   }
   100%{
     transform: translate(-10%,-10%);
