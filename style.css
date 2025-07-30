@@ -137,3 +137,19 @@ nav{
     margin-top: 8vh;
     width: 100%;
 }
+
+/*----animation part-------*/
+
+#hero-shape{
+    background-color: #FE320A;
+    position: absolute;
+    height: 37vw;
+    width: 55vw;
+    right: 0%;
+    top: 83vh;
+    /* filter: blur(20px); */
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+
+}
+
