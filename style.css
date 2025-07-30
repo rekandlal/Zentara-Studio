@@ -147,9 +147,90 @@ nav{
     width: 55vw;
     right: 0%;
     top: 83vh;
-    /* filter: blur(20px); */
+    filter: blur(25px);
     border-top-left-radius: 50%;
     border-bottom-left-radius: 50%;
 
 }
+
+#hero-1{
+    position: absolute;
+    height: 35vw;
+    width: 35vw;
+    border-radius: 50%;
+    filter: blur(15px);
+    background : linear-gradient(#FE330A,#fe4416);
+    animation-name: anime1;
+    animation-duration: 6s;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+#hero-2{
+    position: absolute;
+    height: 30vw;
+    width: 30vw;
+    border-radius: 50%;
+    filter: blur(20px);
+    right: 20%;
+    background : linear-gradient(#FE330A,#fe4416);
+    animation-name: anime2;
+    animation-duration: 6s;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+#hero-3{
+    position: absolute;
+    height: 25vw;
+    width: 25vw;
+    border-radius: 50%;
+    filter: blur(20px);
+    right: 0%;
+    background : linear-gradient(#FE330A,#fe4416);
+    animation-name: anime3;
+    animation-duration: 4s;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes anime1  {
+  0% {
+    transform: translate(0%, 0%);
+  }
+  50%{
+    transform: translate(-15%, -7%);
+  }
+  100%
+  {
+    transform: translate(-7%, 7%);
+  }
+}
+
+@keyframes anime2  {
+  0% {
+    transform: translate(0%, -10%);
+  }
+  50%{
+    transform: translate(20% ,-1%);
+  }
+  100%{
+    transform: translate(-10%,-10%);
+  }
+  
+}
+
+@keyframes anime3 {
+    0%{
+        transform : translate(0%,-10%);
+    }
+    100%{
+        transform: translate(-20%,10%);
+    }
+    
+}
+
 
