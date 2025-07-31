@@ -238,4 +238,55 @@ nav{
     
 }
 
+/* page 2 */
+#page2{
+    min-height: 100vh;
+    width: 100%;
+    background-color: #EFEAE3;
+    padding: 8vw 0;
+}
+
+#moving-text {
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+#moving-text::-webkit-scrollbar{
+    display: none;
+}
+
+.con{
+    white-space: nowrap;  /* arrange in one line */
+    display: inline-block;
+    animation-name: moving ;
+    animation-duration: 12s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+#moving-text h1{
+    font-size: 9vw;
+    /* background-color: blue; */
+    display: inline-block;
+}
+
+#gola{
+    height: 5vw;
+    width: 5vw;
+    border-radius: 50%;
+    background-color: #FE320A;
+    display: inline-block;
+    margin: 1vw 2vw;
+}
+
+@keyframes moving {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
+
+
 
