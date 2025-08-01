@@ -288,5 +288,12 @@ nav{
     }
 }
 
+/* page2 bottom part */
+.page2-bottom{
+    height: 80vh;
+    width: 100%;
+    background-color: aqua;
+    display: flex;
+}
 
 
