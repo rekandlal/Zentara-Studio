@@ -389,4 +389,29 @@ nav{
     }
 }
 
+/* page 3 */
+
+#page3{
+    min-height: 100vh;
+    background-color: rgb(239, 234, 227);
+}
+
+/* title section (feature) */
+
+#feature{
+    display: flex;
+    align-items: center;
+    padding: 3vw 2vw;
+    gap: 0.5vw;
+    background-color: aqua;
+}
+
+#small-circle{
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: rgb(254, 51, 10);
+}
+
+
 
