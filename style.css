@@ -457,3 +457,17 @@ nav{
     z-index: 0;
 }
 
+/* fixed image */
+
+#fixed-image{
+    height: 30vw;
+    width: 25vw;
+    position: fixed;
+    z-index: 50;
+    border-radius: 20px;
+    left: 50%;
+    top: 18%;
+    display: none;
+    background-color: cadetblue;
+}
+
