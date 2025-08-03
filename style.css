@@ -289,15 +289,43 @@ nav{
 }
 
 /* page2 bottom part */
-.page2-bottom{
-    height: 80vh;
-    width: 100%;
-    background-color: aqua;
+#page2bottom {
     display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4vw 6vw;
+    height: 93vh;
+    /* gap: 20px; */
+    
 }
 
-.page2-bottom circle{
-    background-color: #FE320A;
+
+#part1 {
+    width: 63%;
 }
 
+
+#page2bottom h1 {
+    font-size: 4.2vw;
+    /* z-index: 9;
+    position: relative; */
+    font-family: neu;
+    font-weight: 900;
+    line-height: 4vw;
+}
+
+#part2 {
+    padding-top: 41vh;
+    margin-left: 12vw;
+    padding-right: 1.3vw;
+    width: 24%;
+}
+
+
+#part2 img {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    margin-bottom: 3vw;
+}
 
