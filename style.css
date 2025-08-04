@@ -467,7 +467,10 @@ nav{
     border-radius: 20px;
     left: 50%;
     top: 18%;
-    display: none;
+    display: none; /* using javaScript to show image */
     background-color: cadetblue;
+
+    background-size: cover;
+    background-position: center;
 }
 

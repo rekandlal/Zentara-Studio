@@ -3,7 +3,7 @@ const scroll = new LocomotiveScroll({
     smooth: true
 });
 
-// update img shown after hover on element container
+// corresponding img shown after hover on element container
 
 var elementContainer = document.querySelector("#element-container");
 var fixedImage = document.querySelector("#fixed-image");
@@ -15,3 +15,20 @@ elementContainer.addEventListener("mouseenter",function(){ // ye event listener 
 elementContainer.addEventListener("mouseleave",function(){ // ye event listener hover element-container na hone par image nhi dikhayega
     fixedImage.style.display = "none";
 })
+
+
+// for indiviual element
+
+var elem1 = document.querySelector(".elem1");
+
+elem1.addEventListener("mouseenter",function(){
+    var image1 = elem1.getAttribute("data-image"); 
+    fixedImage.style.backgroundImage = `url(${image1})`
+})
+
+elem1.addEventListener("mouseleave",function(){
+    var image1 = elem1.getAttribute("data-image"); 
+    fixedImage.style.backgroundImage = `url(${image1})`
+})
+
+
