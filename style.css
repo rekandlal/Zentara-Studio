@@ -457,9 +457,40 @@ nav{
     z-index: 0;
 }
 
+/* element container text style */
+#content{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2vw;
+}
+
+#content h2{
+    font-family: neu;
+    font-weight: bolder;
+    font-size: 3vw;
+}
+
+#content div{
+    position: relative;
+    text-align: right;
+    z-index: 10;
+}
+
+#content div h4{
+    font-weight: 300;
+}
+
+#content div p{
+    color: rgb(173, 167, 167);
+}
+
+
 /* fixed image */
 
-#fixed-image{
+#fixed-image{ /* top tags in body div */
     height: 30vw;
     width: 25vw;
     position: fixed;
@@ -468,7 +499,6 @@ nav{
     left: 50%;
     top: 18%;
     display: none; /* using javaScript to show image */
-    background-color: cadetblue;
 
     background-size: cover;
     background-position: center;
