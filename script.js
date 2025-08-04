@@ -19,16 +19,13 @@ elementContainer.addEventListener("mouseleave",function(){ // ye event listener 
 
 // for indiviual element
 
-var elem1 = document.querySelector(".elem1");
+var elementAll = document.querySelectorAll("#elem")
 
-elem1.addEventListener("mouseenter",function(){
-    var image1 = elem1.getAttribute("data-image"); 
-    fixedImage.style.backgroundImage = `url(${image1})`
-})
-
-elem1.addEventListener("mouseleave",function(){
-    var image1 = elem1.getAttribute("data-image"); 
-    fixedImage.style.backgroundImage = `url(${image1})`
+elementAll.forEach(function(e){
+    e.addEventListener("mouseenter" , function(){
+        var image = e.getAttribute("data-image")
+        fixedImage.style.backgroundImage = `url(${image})`
+    })
 })
 
 
