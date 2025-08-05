@@ -560,9 +560,12 @@ nav{
 /* page 4 */
 
 #page4{
-    height: 150vh;
+    min-height: 150vh;
+    max-width: 100vw;
+    overflow: hidden;
     background-color: aquamarine;
     padding: 6vw 0;
+    position: relative;
 }
 
 #page4 #black-box{
@@ -574,12 +577,29 @@ nav{
     align-items: center;
 }
 
-#black-box #page4-img{
+#black-box #tab-sec{
+    /* padding: 0 9vw; */
+    background-color: red;
+}
+
+#page4 #black-box img{
     height: 100%;
     width: 60%;
     border-radius: 25px;
-    /* background-size: cover; it cover image */
-    background-color: #fe330a;
+    background-size: cover; 
+    
+
 }
+
+
+/* #tabs{
+    position: relative;
+    border-left: 2px solid #504A45;
+    padding-left: 2vw;
+} */
+
+
+
+
 
 
