@@ -557,3 +557,29 @@ nav{
     color :white;
 }
 
+/* page 4 */
+
+#page4{
+    height: 150vh;
+    background-color: aquamarine;
+    padding: 6vw 0;
+}
+
+#page4 #black-box{
+    height: 110vh;
+    margin: 0 2vw;
+    background-color: black;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+}
+
+#black-box #page4-img{
+    height: 100%;
+    width: 60%;
+    border-radius: 25px;
+    /* background-size: cover; it cover image */
+    background-color: #fe330a;
+}
+
+
