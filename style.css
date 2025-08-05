@@ -508,16 +508,52 @@ nav{
 
 #button{
     padding: 3vw 2vw;
-
 }
 
 #nav-button{
-    height: 3vw;
-    width: 9vw;
-    border: 1px solid black;
     display: flex;
-    align-items: center;
-    justify-content: center;
+}
+
+#nav-button h4{
+    border: 1px solid #917e78dc ;
+    padding: 13px 21px;
     border-radius: 50px;
+    margin: 0 7px;
+    position: relative;
+    overflow: hidden;
+}
+
+#nav-button a{
+    text-decoration: none;
+    color: black;
+    font-family: neu;
+    font-weight:100;
+}
+
+#nav-button h4::after{
+    content: ""; /*::after ek pseudo-element hota hai jo browser me tab tak create hi nahi hota jab tak usko content property nahi dete.
+                       Isiliye agar mujhe uske upar koi shape, color, animation ya background apply karna hai, toh mujhe sabse pehle:*/
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    bottom: -100%;
+    border-radius: 50px;
+    background-color: black;
+    transition: all ease 0.3s;
+}
+
+#nav-button h4:hover::after{
+    bottom: 0;
+    border-radius: 50px;
+}
+
+#nav-button h4 a{
+    position: relative;
+    z-index: 9;
+}
+
+#nav-button h4:hover a{
+    color :white;
 }
 
