@@ -660,7 +660,7 @@ nav{
 
 footer{
     position: fixed;
-    height: 100vh;
+    height: 105vh;
     width: 100%;
     background-color: black;
     color:#EFEAE3 ;
@@ -715,7 +715,7 @@ footer #middle-footer{
 }
 
 #lower-footer #tag{
-    margin-top: 1.1vw;
+    margin-top: 3vw;
     height: 25vw;
     /* background-color: #FF9831; */
     border-bottom: 1px solid #504A45;
@@ -727,14 +727,75 @@ footer #middle-footer{
     font-weight: 700;
 }
 
-#lower-footer #lower{
-    padding: 1.2vw 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+#lower {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1vw 0vw;
+  /* background-color: #f2f2f2; */
+  flex-wrap: wrap;
 }
 
-#lower h5{
-    font-size: 1.1vw;
-    font-weight: 200;
+#lower h5 {
+  font-size: 1.1vw;
+  font-weight: 200;
+  margin: 0.5vw;
+  color: #4a4646;
 }
+
+/* animation on footer */
+
+footer #shape1{
+    position: absolute;
+    height: 90%;
+    width: 90%;
+    top : -50%;
+    left: -20%;
+    filter: blur(20px);
+    background-color: #FE330A;
+    animation-name: shapeOne;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes shapeOne {
+    0%{
+        transform: rotate(-10deg);
+    }
+    100%{
+        transform: rotate(-20deg);
+    }
+}
+
+footer #shape2{
+    position: absolute;
+    height: 90%;
+    width: 70%;
+    top:-25%;
+    right: -25%;
+    filter: blur(20px);
+    background-color: #FE330A;
+    animation-name: shapeTwo;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+
+}
+
+@keyframes shapeTwo {
+    0%{
+        transform: rotate(30deg);
+    }
+    100%{
+        transform: rotate(45deg);
+    }
+}
+
+
+
+
+
+
