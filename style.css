@@ -14,6 +14,12 @@ html , body {
     height: 100%;
     width: 100%;
 }
+/* main contianer */
+#main_container{
+    position : relative;
+    background: transparent;
+    z-index: 0;
+}
 
 /* hum parent(main_container) ko height nhi de raha hi ku ki
 because-----(localmotive use karna hai)--------------  */
@@ -137,7 +143,7 @@ nav{
     border-radius: 27px;
     margin-top: 8vh;
     width: 100%;
-    z-index: 999; /* layout priority */
+     z-index: 9; 
 }
 
 /*----animation part-------*/
@@ -454,7 +460,7 @@ nav{
     display : flex;
     align-items: center;
     justify-content: space-between;
-    z-index: 0;
+    /* z-index: 0; */
 }
 
 /* element container text style */
@@ -633,6 +639,26 @@ nav{
     height: 8px;
     background-color: #FE320A;
 }
+
+/* page 5 */
+
+#page5 {
+    height: 110vh;
+    /* width :100vw; */
+    /* background-color: #FE330A; */
+}
+
+footer{
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+    color:#EFEAE3 ;
+    bottom: 0;
+    z-index: -1;
+    /* z-index: 100; */
+}
+
 
 
 
