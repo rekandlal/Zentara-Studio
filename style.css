@@ -606,11 +606,10 @@ nav{
 #desc {
    transition: opacity 0.4s ease;
 }
+
 #page4-img{
     transition: opacity 0.4s ease;
 }
-
-
 
 #page4 #black-box img{
     height: 100%;
@@ -620,7 +619,20 @@ nav{
     float :left;
 }
 
+/* bottom section */
+#page4 #bottom-sec{
+    background-color: #EFEAE3;
+    display: flex;
+    padding: 8vw 6vw 0; /* TOP = 8vw ,RIGHT = 6vw , BOTTOM = 0 ,LEFT = 6vw  (same as right) */
+    gap: 0.5vw;
+    align-items: center;
+}
 
+#small-circle {
+    width: 8px;
+    height: 8px;
+    background-color: #FE320A;
+}
 
 
 
