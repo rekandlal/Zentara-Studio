@@ -642,7 +642,8 @@ nav{
 
 }
 
-#page2, #page3, #page4 {
+#page2, #page3, #page4 { /* Scroll ke time section edges par aa rahe subtle rendering glitches / antialiasing lines hain
+(caused by blur + fixed positioned background elements). position: fixed + z-index */
   margin-top: -0.8px;
 }
 
@@ -655,6 +656,8 @@ nav{
     /* background-color: #FE330A; */
 }
 
+/* footer */
+
 footer{
     position: fixed;
     height: 100vh;
@@ -664,7 +667,49 @@ footer{
     bottom: 0;
     z-index: -1;
     /* z-index: 100; */
+
+    /* display: flex; */
 }
+
+footer #middle-footer{
+    /* background-color: aqua; */
+    position: relative;
+    display: flex;
+    padding: 6.2vw 6vw;
+    align-items: center;
+    justify-content: space-between;
+
+    padding-bottom: 4vw;
+}
+
+#left-side h2{
+    font-size: 2.1vw;
+    font-family: neu;
+    font-weight: 700;
+}
+
+#right-side{
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+    width: 26%;
+}
+
+#right-side p{
+    font-size: 1.3vw;
+}
+
+#right-side h6{
+    font-size: 1.2vw;
+    font-weight: 200;
+    color: #d3cdc1df;
+    border-bottom: 1px solid #d3cdc1df;
+    padding-bottom: 0.5vw;
+}
+
+
+
+
 
 
 
