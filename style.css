@@ -649,38 +649,30 @@ nav{
 
 /* swiper page */
     .swiper {
-      width: 100%;
-      height: 100%;
+        min-height: 28vh;
+        padding: 7vh 6vw;
     }
-
-    .swiper-slide {
-      text-align: center;
-      font-size: 18px;
-      background: #444;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-
+    
     .swiper-slide img {
-      display: block;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
+        display: inline-block;
+        position: relative;
+        object-fit: cover;
+        width: 100%;
     }
-
+    
+    .swiper-slide p {
+        width: 100%;
+        color: #2a2929f4;
+        font-size: 2vh;
+    }
+    
     .swiper-slide {
-      width: 60%;
+        width: 30%;
+        padding-left:2vw;
+        padding-top: 2vh;
+        gap: 25px;
+        border-left: 1px solid #a39e9783;
     }
-
-    .swiper-slide:nth-child(2n) {
-      width: 40%;
-    }
-
-    .swiper-slide:nth-child(3n) {
-      width: 20%;
-    }
-
 
 /* page 5 */
 
@@ -688,6 +680,12 @@ nav{
     height: 110vh;
     /* width :100vw; */
     /* background-color: #FE330A; */
+    
+    /* problem : page 5 create kiya hai wo transparent hai lekin footer ke upar aa raha hai, isliye clicks footer pe ja hi nahi rahe — wo page 5 ke transparent layer pe hi block ho ja rahe hain.  */
+
+    /* Toh footer ke neeche hone ke bawajood page5 click block nahi karega. */
+    pointer-events: none;
+
 }
 
 /* footer */
