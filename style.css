@@ -28,7 +28,7 @@ because-----(localmotive use karna hai)--------------  */
     width: 100%;
     background-color: #EFEAE3;
     position: relative; /* developer approach hai ki parent div ko humesa position relative denge ku ki chid div pe hum top , right , left , bottom , z-index de skate hai  or children control rahte hai*/
-    padding: 0 2vw;
+    padding: 0 2.5vw;
 }
 
 /* if you want color from any website use extensions---(colorzilla) */
@@ -460,7 +460,7 @@ nav{
     display : flex;
     align-items: center;
     justify-content: space-between;
-    /* z-index: 0; */
+    z-index: 0;
 }
 
 /* element container text style */
@@ -638,7 +638,14 @@ nav{
     width: 8px;
     height: 8px;
     background-color: #FE320A;
+
+
 }
+
+#page2, #page3, #page4 {
+  margin-top: -0.8px;
+}
+
 
 /* page 5 */
 
