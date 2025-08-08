@@ -671,6 +671,7 @@ footer{
     /* display: flex; */
 }
 
+/* middle footer section */
 footer #middle-footer{
     /* background-color: aqua; */
     position: relative;
@@ -707,12 +708,33 @@ footer #middle-footer{
     padding-bottom: 0.5vw;
 }
 
+/* lower footer section */
+#lower-footer{
+    position: relative;
+    padding: 0 1.5vw;
+}
 
+#lower-footer #tag{
+    margin-top: 1.1vw;
+    height: 25vw;
+    /* background-color: #FF9831; */
+    border-bottom: 1px solid #504A45;
+}
 
+#tag h1{
+    font-size: 23.2vw;
+    font-family: neu;
+    font-weight: 700;
+}
 
+#lower-footer #lower{
+    padding: 1.2vw 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 
-
-
-
-
-
+#lower h5{
+    font-size: 1.1vw;
+    font-weight: 200;
+}
