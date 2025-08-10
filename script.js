@@ -1,3 +1,4 @@
+// for smooth scrolling
 const scroll = new LocomotiveScroll({
     el: document.querySelector('#main_container'),
     smooth: true
@@ -85,7 +86,7 @@ Execution.addEventListener("click" , function(){
 })
 
 
-// swiper 
+// swiper js 
 var swiper = new Swiper(".mySwiper", {
     slidesPerView: "auto",
     spaceBetween: 50
