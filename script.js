@@ -86,7 +86,7 @@ Execution.addEventListener("click" , function(){
 })
 
 
-// swiper js 
+// swiper js for sliding
 var swiper = new Swiper(".mySwiper", {
     slidesPerView: "auto",
     spaceBetween: 50
