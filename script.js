@@ -89,6 +89,14 @@ Execution.addEventListener("click" , function(){
     
 })
 
+// menu toggle 
+const hamburgerBtn = document.getElementById('hamburger-btn');
+
+hamburgerBtn.addEventListener('click', () => {
+    hamburgerBtn.classList.toggle('active');
+});
+
+
 
 // swiper js for sliding
 var swiper = new Swiper(".mySwiper", {
