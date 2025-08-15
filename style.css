@@ -63,6 +63,10 @@ nav{
     display: none;
 }
 
+#full-screen{
+    display: none;
+}
+
 #nav_right{
     display: flex;
     align-items: center;
