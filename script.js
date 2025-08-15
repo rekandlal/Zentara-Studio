@@ -90,11 +90,15 @@ Execution.addEventListener("click" , function(){
 })
 
 // menu toggle 
-const hamburgerBtn = document.getElementById('hamburger-btn');
+const list = document.querySelector('ul');
 
-hamburgerBtn.addEventListener('click', () => {
-    hamburgerBtn.classList.toggle('active');
-});
+    list.addEventListener("click" , () => {
+      if(list.classList.contains("active")){
+         list.classList.remove("active")
+      }else{
+        list.classList.add("active")
+      }
+    })
 
 
 

@@ -870,7 +870,7 @@ footer #shape2{
     #menu-container{
         display: flex;
         justify-content: space-evenly;
-        align-items: center;
+        text-align: center;
         padding: 10px 20px;
         border: solid 1.2px rgba(0, 0, 0, 0.577);
         border-radius: 50px;
@@ -879,28 +879,31 @@ footer #shape2{
 
     #menu h4 a{
         text-decoration: none;
-        font-weight: 550; 
-        font-family: 'Gilory', sans-serif;
+        /* font-weight: 550;  */
+        /* font-family: 'Gilory', sans-serif; */
         color: #000000bb;
-        font-size: 18px;
+        font-size: 20px;
         position: relative;
     }
 
-    #hamburger {
-        height: 4px;       /* patli line */
-        width: 23px;       /* chhoti lambai */
-        background: #000000bb;
-        border-radius: 5px;
-        margin: 3px 0;
-        transition: all 0.3s ease;
+    ul{
+        list-style: none;
+    }
+
+
+    #hamburger{
+        margin-top: 3px;
+        height: 4px;
+        width: 21px;
+        background-color:#000000bb ;
+        border-radius: 20% / 90%;
+        transition: 0.3s ease;
         position: relative;
         cursor: pointer;
     }
 
-
-    /* Transition for X */
     ul.active li:nth-child(1){
-        transform: translateY(15px) rotate(45deg);
+        transform: translateY(7.5px) rotate(45deg);
     }
 
     ul.active li:nth-child(2){
@@ -908,7 +911,7 @@ footer #shape2{
     }
 
     ul.active li:nth-child(3){
-        transform: translateY(-15px) rotate(-45deg);
+        transform: translateY(-7.5px) rotate(-45deg);
     }
         
 
