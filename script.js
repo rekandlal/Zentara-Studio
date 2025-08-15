@@ -91,13 +91,33 @@ Execution.addEventListener("click" , function(){
 
 // menu toggle 
 const list = document.querySelector('ul');
+    // list.addEventListener("click" , () => {
+    //   if(list.classList.contains("active")){
+    //      list.classList.remove("active")
+    //   }else{
+    //     list.classList.add("active")
+    //   }
+    // })
+var menu = document.querySelector("#menu h4");
+var fullScreen = document.querySelector("#full-screen");
+var flag = 0;
+    menu.addEventListener("click" , function () {
 
-    list.addEventListener("click" , () => {
-      if(list.classList.contains("active")){
-         list.classList.remove("active")
-      }else{
-        list.classList.add("active")
-      }
+        // full screen
+        if(flag == 0){
+            fullScreen.style.top = 0;
+            flag = 1;
+        }else{
+            fullScreen.style.top = "-100%";
+            flag = 0;
+        }
+
+        // hamburger
+        if(list.classList.contains("active")){
+            list.classList.remove("active")
+        }else{
+            list.classList.add("active")
+        }
     })
 
 
