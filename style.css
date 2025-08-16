@@ -717,7 +717,7 @@ nav{
 footer{
     position: fixed;
     min-height: 100vh;
-    max-width: 1000vw;
+    max-width: 100vw;
     background-color: black;
     color:#EFEAE3 ;
     bottom: 0;
