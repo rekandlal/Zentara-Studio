@@ -1008,6 +1008,114 @@ footer #shape2{
         z-index: 10;
     }
 
+    /*----video styles----*/
+
+    #page1 video{
+        position: relative;
+        border-radius: 27px;
+        margin-top: 4vh;
+        
+        width: 100%; 
+        z-index: 10;
+    }
+
+    /* ----animated part-----*/
+    #hero-shape{
+    background-color: #FE320A;
+    position: absolute;
+    height: 37vw;
+    width: 55vw;
+    right: 0%;
+    top: 70vh;
+    filter: blur(10px);
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+    }
 
 
-}
+    #hero-1{
+        position: absolute;
+        height: 35vw;
+        width: 35vw;
+        border-radius: 50%;
+        filter: blur(12px);
+        background : linear-gradient(#FE330A,#FE330A);
+        animation-name: anime1;
+        animation-duration: 6s;
+        animation-direction: alternate;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+
+    }
+
+    #hero-2{
+        position: absolute;
+        height: 30vw;
+        width: 30vw;
+        border-radius: 50%;
+        filter: blur(15px);
+        right: 20%;
+        background : linear-gradient(#FE330A,#FE330A);
+        animation-name: anime2;
+        animation-duration: 6s;
+        animation-direction: alternate;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+
+    }
+
+    #hero-3{
+        position: absolute;
+        height: 25vw;
+        width: 25vw;
+        border-radius: 50%;
+        filter: blur(20px);
+        right: 0%;
+        background : linear-gradient(#FE330A,#FE330A);
+        animation-name: anime3;
+        animation-duration: 4s;
+        animation-direction: alternate;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+
+    }
+
+    @keyframes anime1  {
+    0% {
+        transform: translate(0%, 0%);
+    }
+    50%{
+        transform: translate(-15%, -7%);
+    }
+    100%
+    {
+        transform: translate(-7%, 7%);
+    }
+    }
+
+    @keyframes anime2  {
+    0% {
+        transform: translate(0%, -10%);
+    }
+    50%{
+        transform: translate(25% ,-1%);
+    }
+    100%{
+        transform: translate(-10%,-10%);
+    }
+    
+    }
+
+    @keyframes anime3 {
+        0%{
+            transform : translate(0%,-10%);
+        }
+        100%{
+            transform: translate(-20%,10%);
+        }
+        
+    }
+
+
+
+    }
