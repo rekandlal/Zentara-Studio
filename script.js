@@ -1,8 +1,8 @@
 // for smooth scrolling
-const scroll = new LocomotiveScroll({
-    el: document.querySelector('#main_container'),
-    smooth: true
-});
+// const scroll = new LocomotiveScroll({
+//     el: document.querySelector('#main_container'),
+//     smooth: true
+// });
 
 // corresponding img shown after hover on element container
 
