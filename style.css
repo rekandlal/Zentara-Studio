@@ -1418,7 +1418,7 @@ footer #shape2{
     #page4 #bottom-sec{
         background-color: #EFEAE3;
         display: flex;
-        padding: 40vw 6vw 0; 
+        padding: 40vw 6vw 5vw; 
         gap: 1vw;
         align-items: center;
     }
@@ -1434,6 +1434,180 @@ footer #shape2{
 
     }
 
+
+     /* swiper page */
+    .swiper {
+        min-height: 28vh;
+        padding: 7vh 6vw;
+    }
+    
+    .swiper-slide img {
+        display: inline-block;
+        position: relative;
+        object-fit: cover;
+        width: 100%;
+    }
+    
+    .swiper-slide p {
+        width: 100%;
+        color: #2a2929f4;
+        font-size: 2vh;
+    }
+    
+    .swiper-slide {
+        width: 56%;
+        padding-left:8vw;
+        padding-top: 2vh;
+        gap: 25px;
+        border-left: 1px solid #a39e9783;
+    }
+    
+    /* page 5 */
+    #page5 {
+        min-height: 60vh;
+        background-color: transparent;
+        pointer-events: none; 
+        position: relative;
+        z-index: 1;
+    }
+
+    /* footer */
+
+    footer{
+        position: fixed;
+        min-height: 60vh;
+        max-width: 100vw;
+        background-color: black;
+        color:#EFEAE3 ;
+        bottom: 0;
+        z-index: -1;
+    }
+
+    /* middle footer section */
+    footer #middle-footer{
+        /* background-color: aqua; */
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        padding: 6.2vw 6vw;
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: 10vw;
+        padding-bottom: 4vw;
+    }
+
+    #left-side h2{
+        font-size: 10vw;
+        font-family: neu;
+        font-weight: 700;
+    }
+
+    #right-side{
+        display: flex;
+        flex-direction: column;
+        gap: 2.5vh;
+        width: 90%;
+    }
+
+    #right-side p{
+        font-size: 2.5vh;
+    }
+
+    #right-side h6{
+        font-size: 2vh;
+        font-weight: 200;
+        color: #d3cdc1df;
+        border-bottom: 1px solid #d3cdc1df;
+        padding-bottom: 0.5vw;
+    }
+
+    /* lower footer section */
+    #lower-footer{
+        position: relative;
+        padding: 0 1.5vw;
+    }
+
+    #lower-footer #tag{
+        margin-top: 11vw;
+        height: 25vw;
+        /* background-color: #FF9831; */
+        border-bottom: 1px solid #504A45;
+    }
+
+    #tag h1{
+        font-size: 24.8vw;
+        font-family: neu;
+        font-weight: 700;
+    }
+
+    #lower {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1vw 0vw;
+    /* background-color: #f2f2f2; */
+    flex-wrap: wrap;
+    }
+
+    #lower h5 {
+    font-size: 2.7vw;
+    font-weight: 200;
+    margin: 0.5vw;
+    color: #B0B0B0;
+    padding-top: 2vw;
+    }
+
+    /* animation on footer */
+
+    footer #shape1{
+        position: absolute;
+        height: 90%;
+        width: 130vw;
+        top : -25%;
+        left: -70%;
+        /* filter: blur(20px); */
+        background-color: #FE330A;
+        animation-name: shapeOne;
+        animation-duration: 4s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+    }
+
+    @keyframes shapeOne {
+        0%{
+            transform: rotate(-15deg);
+        }
+        100%{
+            transform: rotate(-25deg);
+        }
+    }
+
+    footer #shape2{
+        position: absolute;
+        height: 90%;
+        width: 130vw;
+        top:-20%;
+        right: -60%;
+        /* filter: blur(20px); */
+        background-color: #FE330A;
+        animation-name: shapeTwo;
+        animation-duration: 5s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+
+    }
+
+    /* footer animation */
+    @keyframes shapeTwo {
+        0%{
+            transform: rotate(30deg);
+        }
+        100%{
+            transform: rotate(45deg);
+        }
+    }
 
 
     }
