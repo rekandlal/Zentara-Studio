@@ -41,7 +41,7 @@ nav{
     padding-left: 2vw;
     padding-right: 2vw;
     padding-bottom: 2vw;
-    margin: -2.5vw;
+    margin: -2.7vw;
     position: relative;
     z-index: 109;
     /* 1vw = 1% of the browser window’s width
@@ -54,6 +54,12 @@ nav{
              bottom = 2vw
             left = 2vw
             right = 2vw */
+}
+
+
+nav img{
+    width :11vw;
+    height: 4.8vw;
 }
 
 /* menu button for mobile */
@@ -145,7 +151,8 @@ nav{
     text-align: end;
     line-height: 83%;
     padding-right: 1vw;
-
+    position: relative;
+    top: -3vw;
 }
 
 /*----video styles----*/
@@ -737,7 +744,7 @@ footer #middle-footer{
 }
 
 #left-side h2{
-    font-size: 2.1vw;
+    font-size: 2.6vw;
     font-family: neu;
     font-weight: 700;
 }
@@ -750,7 +757,7 @@ footer #middle-footer{
 }
 
 #right-side p{
-    font-size: 1.3vw;
+    font-size: 1.4vw;
 }
 
 #right-side h6{
@@ -775,7 +782,7 @@ footer #middle-footer{
 }
 
 #tag h1{
-    font-size: 23.2vw;
+    font-size: 24.8vw;
     font-family: neu;
     font-weight: 700;
 }
@@ -874,6 +881,11 @@ footer #shape2{
         padding: 3vw 3vw;
 
         background-color: #EFEAE3;
+    }
+
+    nav img{
+        width :36vw;
+        height: 19vw;
     }
 
     #nav_right{
@@ -1000,8 +1012,8 @@ footer #shape2{
 
     #left h3{
         font-family:neu;
-        width: 72%;
-        font-size: 4vw;
+        width: 87%;
+        font-size: 6vw;
         bottom: 2vw;
         font-weight: 800;
         padding-right : 4vw;
@@ -1113,6 +1125,45 @@ footer #shape2{
         100%{
             transform: translate(-20%,10%);
         }
+        
+    }
+
+    #moving-text h1{
+        font-size: 12vw;
+        /* background-color: blue; */
+        display: inline-block;
+    }
+
+    #gola{
+        height: 7vw;
+        width: 7vw;
+        border-radius: 50%;
+        background-color: #FE320A;
+        display: inline-block;
+        margin: 1vw 2vw;
+    }
+
+
+     /*----page2-----*/
+
+    /* #page2{
+        min-height: 100vh;
+        width: 100%;
+        background-color: #EFEAE3;
+        padding: 5vw 0;
+        position: relative; */
+    /* } */
+
+
+    /* page2 bottom part */
+    #page2bottom {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 4vw 6vw;
+        height: 80vh;
+        gap: 20px;
         
     }
 
