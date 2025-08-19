@@ -442,6 +442,7 @@ nav img{
 #mob-elem{
     display: none;
 }
+
 #elem{
     height: 7vw;
     width: 100%;
@@ -1305,6 +1306,11 @@ footer #shape2{
     #fixed-image{
         display: none;
     }
+
+    #elem:hover #overlay{
+        display: none;
+    }
+
 
     #mob-elem{
         display: flex;
