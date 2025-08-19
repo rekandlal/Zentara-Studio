@@ -1311,6 +1311,9 @@ footer #shape2{
         display: none;
     }
 
+    #mob-elem{
+        display: block;
+    }
 
     #mob-elem{
         display: flex;
